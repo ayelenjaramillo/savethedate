@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Josefin+Sans:ital,wght@0,600;1,300&family=Montserrat:wght@200&family=Noto+Serif:wght@700&family=Rajdhani:wght@300;400;500&family=Raleway:ital,wght@0,100;0,500;1,200&family=Roboto:ital,wght@0,500;1,900&family=Ubuntu&display=swap');
+
+/* MOBILE FIRST */
+ .root{
+  background-color: #EEE7F0;
+  width: 100%;
+} 
+.square{
+  background-color: #B187BE;
+  width: 10%;
+  padding-left: 3%;
+  border-radius: 2%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  margin-bottom: 5%;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 10px;
+}
+.sqGeneral{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.text{
+  font-size: 12px;
+}
+.number{
+  font-size: 25px;
+  padding-left: 13%;
+}
+.title{
+  font-size: 35px;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 35%;
+  margin-top: 4%;
+  padding-top: 6%;
+}
+.imagen{
+  width: 80%;
+  border-radius: 6%;
+  margin-bottom: 10%;
+  margin-left: 9%;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 10px;
+}
+@media (min-width:1000px){
+  .sqGeneral{
+    width: 80%;
+    gap: 30px;
+    padding-left: 9%;
+  }
+  .imagen{
+    width: 40%;
+    padding:  1%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 10px;
+  }
+  .title{
+    font-size: 70px;
+    padding-left: 34%;
+    padding-top: 4%;
+  }
+  .text{
+    padding-left: 5%;
+    font-size: 20px;
+  }
+  .number{
+    padding-left: 13%;
+    font-size: 35px;
+  }
+  .root{
+    padding-bottom: 2%;
+  }
+  .images{
+    display: flex;
+  }
+
+}

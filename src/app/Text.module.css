@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Montserrat:wght@200&family=Noto+Serif:wght@700&family=Raleway:ital,wght@0,100;0,500;1,200&family=Roboto:ital,wght@0,500;1,900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Serif:wght@700&family=Raleway:ital,wght@0,100;0,500;1,200&family=Roboto:ital,wght@0,500;1,900&family=Satisfy&display=swap');
+.title{
+  color: #B187BE; 
+  font-family: 'Caveat', cursive;
+  font-size: 45px;
+  padding-left: 25%;
+}
+.principal_text{
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  padding: 1% 5%;
+  color: #554958;
+  margin-bottom: 5%;
+}
+@media (min-width:1000px){
+  .general{
+    width: 80%;
+    padding:4% 5%;
+    margin: 0;
+  }
+  .principal_text{
+    font-size: 40.5px;
+  }
+  .title{
+    font-size: 60px;
+    padding-left: 13%;
+    font-weight: bold;
+  }
+}

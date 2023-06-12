@@ -1,95 +1,44 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import e from "../app/img/principal-card.png"; 
+import Cuentaregresiva from "./Cuentaregresiva";
+import Text from "./Text";
+import Confirmacionasis from "./Confirmacionasis";
+import Wishlist from "./Wishlist";
+import Footer from "./Footer";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"; 
+import { faLeaf } from "@fortawesome/free-solid-svg-icons";
+import styles from "./page.module.css"; 
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+   <div>
+    <header className={styles.header}> ¡CELEBRATION!
+      <p className={styles.p}> save the date </p>
+    </header>
+     <hr className={styles.hr} />
+     <span>
+      <img src={e.src} className={styles.principal_img}/>
+    </span>
+    <div className={styles.leaf}>
+      <FontAwesomeIcon icon={faLeaf} className="leaf-i"  style={{ color: "#DDBCE7", width: "30px"}} />
+      <FontAwesomeIcon icon={faLeaf} className="leaf-i"  style={{ color: "#DDBCE7", width: "30px"}} />
+      <FontAwesomeIcon icon={faLeaf} className="leaf-i"  style={{ color: "#DDBCE7", width: "30px"}} />
+    </div>
+    <div className="countdown" >
+       <Cuentaregresiva/>
+    </div>
+    <div className={styles.changeable}>
+      <div className={styles.history}>
+        <Text/>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.assistance}>
+        <Confirmacionasis/>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
+    <div className="i-list">
+      <Wishlist/>
+    </div>
+    <Footer/>
+    </div>
+    
   )
 }
